@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Skin Disease Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dog Skin Disease Detector</h1>
+    </header>
+
+    <section class="about">
+        <h2>About This Project</h2>
+        <p>This AI-powered system helps in early detection of skin diseases in dogs, enabling faster treatment and better health.</p>
+    </section>
+
+    <section class="upload-section">
+        <h2>Upload an Image</h2>
+        <div class="upload-box">
+            <input type="file" id="fileInput" accept="image/*">
+            <button onclick="uploadImage()">Analyze</button>
+        </div>
+        <div id="predictionResult"></div>
+    </section>
+
+</body>
+</html>
